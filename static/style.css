@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #4f8cff, #6ed0ff);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #444;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4f8cff;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #4f8cff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #3a78e0;
+}
+
+.result {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #4f8cff;
+}
+
+a {
+    text-decoration: none;
+    color: #4f8cff;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.card {
+    position: relative; /* WAJIB agar absolute bekerja */
+}
+
+/* Tombol kembali */
+.back-btn {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    font-size: 14px;
+    color: #4f8cff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.back-btn:hover {
+    text-decoration: underline;
+}
+
+/* Warna berdasarkan level */
+.result {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+/* Pemula */
+.result.pemula {
+    color: #c62828;
+    background: #fdecea;
+}
+
+/* Menengah */
+.result.menengah {
+    color: #ef6c00;
+    background: #fff4e5;
+}
+
+/* Lanjutan */
+.result.lanjutan {
+    color: #2e7d32;
+    background: #e8f5e9;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hasil Evaluasi</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="card">
+
+    <a href="/" class="back-btn">← Kembali</a>
+
+    <h2>Hasil Analisis AI</h2>
+
+    <p>Tingkat Pembelajaran Anda:</p>
+    <div class="result {{ level|lower }}">
+        {{ level }}
+    </div>
+
+</div>
+
+</body>
+</html>

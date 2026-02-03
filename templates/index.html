@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Adaptive Learning</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="card">
+    <h2>Evaluasi Pembelajaran</h2>
+
+    <form method="POST">
+        <label>Nilai Kuis</label>
+        <input type="number" name="nilai" required>
+
+        <label>Waktu Pengerjaan (menit)</label>
+        <input type="number" name="waktu" required>
+
+        <button type="submit">Proses</button>
+    </form>
+</div>
+
+</body>
+</html>
