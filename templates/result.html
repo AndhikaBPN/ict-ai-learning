@@ -7,16 +7,25 @@
 <body>
 
 <div class="card">
-
     <a href="/" class="back-btn">← Kembali</a>
 
-    <h2>Hasil Analisis AI</h2>
+    <h2>Hasil Evaluasi</h2>
 
-    <p>Tingkat Pembelajaran Anda:</p>
+    <p><strong>Jawaban Benar:</strong> {{ correct }} / {{ total }}</p>
+    <p><strong>Nilai:</strong> {{ score }}</p>
+    <p><strong>Waktu Pengerjaan:</strong> {{ duration }} menit</p>
+
+    <hr>
+
+    <p><strong>Tingkat Pembelajaran:</strong></p>
     <div class="result {{ level|lower }}">
         {{ level }}
     </div>
 
+    <p><strong>Gaya Belajar:</strong> {{ learning_style }}</p>
+
+    <p><strong>Rekomendasi Belajar:</strong></p>
+    <p>{{ recommendation }}</p>
 </div>
 
 </body>

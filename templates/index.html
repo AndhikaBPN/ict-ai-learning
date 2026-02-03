@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>AI Adaptive Learning</title>
+    <title>Pilih Mata Kuliah</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 
 <div class="card">
-    <h2>Evaluasi Pembelajaran</h2>
+    <h2>Pilih Mata Kuliah</h2>
 
-    <form method="POST">
-        <label>Nilai Kuis</label>
-        <input type="number" name="nilai" required>
+    <form method="POST" action="/quiz">
+        <button type="submit" name="subject" value="ict">ICT Literacy</button>
+        <br><br>
 
-        <label>Waktu Pengerjaan (menit)</label>
-        <input type="number" name="waktu" required>
+        <button type="submit" name="subject" value="komputer">Dasar Komputer</button>
+        <br><br>
 
-        <button type="submit">Proses</button>
+        <button type="submit" name="subject" value="internet">Internet & Keamanan Digital</button>
+        <br><br>
+
+        <button type="submit" name="subject" value="logika">Logika & Algoritma Dasar</button>
+        <br><br>
+
+        <button type="submit" name="subject" value="ti">Teknologi Informasi Umum</button>
     </form>
 </div>
 
