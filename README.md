@@ -31,18 +31,23 @@ Project ini dikembangkan untuk mata kuliah **ICT Literacy**.
 ---
 
 ## 📂 Struktur Project
+```
 ict-ai-learning/
+├── screenshots
+│   ├── input.png
+│   └── output.png
+├── static
+│   └── style.css
+├── templates
+│   ├── index.html
+│   └── result.html
+├── .gitignore
+├── README.md
 ├── app.py
-├── train_model.py
-├── model.pkl
 ├── data.csv
-│
-├── templates/
-│ ├── index.html
-│ └── result.html
-│
-└── static/
-└── style.css
+├── model.pkl
+└── train_model.py
+```
 
 ---
 
