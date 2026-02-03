@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ subject_title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='quiz.css') }}">
+</head>
+<body>
+
+<div class="quiz-card">
+    <h2>{{ subject_title }}</h2>
+
+    <form method="POST" action="/submit">
+        <input type="hidden" name="subject" value="{{ subject_key }}">
+
+        {% for q in questions %}
+        <div class="question">
+            <p>{{ loop.index }}. {{ q.question }}</p>
+
+            {% set q_index = loop.index %}
+
+            {% for key, option in q.options.items() %}
+            <label class="option">
+                <input type="radio" name="q{{ q_index }}" value="{{ key }}" required>
+                {{ key }}. {{ option }}
+            </label>
+            {% endfor %}
+        </div>
+        {% endfor %}
+
+        <button type="submit" class="submit-btn">Submit Jawaban</button>
+    </form>
+</div>
+
+</body>
+</html>
